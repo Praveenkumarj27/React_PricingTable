@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faCheck,faTimes } from '@fortawesome/free-solid-svg-icons'
 function Pricecard(props) {
     return  <div className="col-lg-4">
     <div className="card mb-5 mb-lg-0">
@@ -8,9 +10,13 @@ function Pricecard(props) {
         <ul className="fa-ul">
             {
                 props.data.features.map((list)=>{
-                    return <li className={list.isEnable ? '':'text-muted'}
-                    ><span className="fa-li">
-                    <i className="fas fa-check"></i></span>{list.name}</li>
+                    return <li className={list.isEnable ? '':'text-muted'} >
+                      {
+                        list.isEnable? <FontAwesomeIcon icon={faCheck } />: <FontAwesomeIcon icon={faTimes } />
+                      }
+                      {/* <span className="fa-li">
+                    <i className="fas fa-check"></i></span> */}
+                    {list.name}</li>
                 })
             }
 
