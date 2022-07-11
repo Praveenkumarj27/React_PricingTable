@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
 section.pricing {
   background: #007bff;
   background: linear-gradient(to right, #0062E6, #33AEFF);
@@ -47,6 +48,8 @@ section.pricing {
   opacity: 0.7;
   transition: all 0.2s;
 }
+
+
 
 /* Hover Effects on Card */
 

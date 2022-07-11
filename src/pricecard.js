@@ -10,19 +10,15 @@ function Pricecard(props) {
         <ul className="fa-ul">
             {
                 props.data.features.map((list)=>{
-                    return <li className={list.isEnable ? '':'text-muted'} >
+                    return  <li  className={list.isEnable ? '':'text-muted'} >
                       {
-                        list.isEnable? <FontAwesomeIcon icon={faCheck } />: <FontAwesomeIcon icon={faTimes } />
+                        list.isEnable? <FontAwesomeIcon id='weight' icon={faCheck } />: <FontAwesomeIcon icon={faTimes } />
                       }
                       {/* <span className="fa-li">
                     <i className="fas fa-check"></i></span> */}
-                    {list.name}</li>
+                    { list.name}</li>
                 })
-            }
-
-
-         
-          
+              }
         </ul>
         <div className="d-grid">
           <a href="#" className="btn btn-primary text-uppercase">Button</a>
